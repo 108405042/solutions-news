@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- rwd css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <!-- rwd js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- rwd setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中原力退衛冕軍　UVL預賽全勝求封王</title>
+
+
+    <style>
+        /*電腦版文章頁*/
+
+        * {
+            box-sizing: border-box
+        }
+
+
+
+        body {
+            background-color: #DDE4E3
+        }
+
+        .news-title {
+            width: 95%;
+            /* max-width: max-content; */
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+        .hc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            width: 95%;
+            height: 30px;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 20px;
+            padding-top: 7px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+
+        p {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+            text-align: justify;
+        }
+
+        .news-img {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+        }
+
+        figcaption {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 15px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+
+
+        .related {
+            background-color: #094847;
+            width: 30%;
+            height: 40px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .related-box {
+            border-bottom: 1px solid #B3B6B9;
+            width: 100%;
+            height: 80px;
+            padding-top: 10px;
+            display: flex;
+        }
+
+        .related-num {
+            width: 40px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #094847;
+        }
+
+        .related-title {
+            padding-left: 3%;
+            padding-top: 3%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+
+        }
+
+        .main-content {
+            padding-top: 30px;
+            width: 90%;
+            margin-left: 5%;
+
+
+        }
+
+        .related-article {
+            margin-right: -15%;
+
+        }
+
+        /*手機版文章頁*/
+
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+
+            .main-content {
+                width: 100%;
+                margin-left: 0%;
+
+            }
+
+            .related-article {
+                width: 100%;
+                padding-left: 5%;
+                margin-top: 20px;
+            }
+
+            .related-box {
+                width: 90%;
+            }
+
+
+            .related-title {
+                font-size: 80%;
+            }
+
+            .news-title {
+                font-size: 34px;
+                width: 100%;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            .news-img {
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            figcaption {
+                font-size: 12px;
+                line-height: 14px;
+                padding-left: 5%;
+                padding-right: 5%;
+
+
+            }
+
+        }
+
+
+
+
+        /*電腦版header*/
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+        .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item:hover {
+            background-color: #D9D9D9;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            color: #4E4F51;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar-brand {
+            margin-left: 100px;
+        }
+
+        .navbar-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+
+        }
+
+        .navbar-toggler-icon span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin-bottom: 4px;
+            background-color: #fff;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        /*手機版header*/
+
+        @media (max-width: 768px) {
+
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                /* 修改為初始位置在畫面外 */
+                width: 100%;
+                height: 100%;
+                background-color: #094847;
+                transition: right 0.3s linear;
+                /* 添加過渡效果 */
+                z-index: 9999;
+            }
+
+            .navbar-collapse.show {
+                right: 0%;
+                /* 修改為滑入畫面內 */
+            }
+
+            .navbar-collapse.show .navbar-nav {
+                margin-top: 30px;
+            }
+
+
+            .navbar-toggler {
+                color: #ffffff;
+                margin-top: -15px;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar-brand {
+                margin-left: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .nav-item {
+                width: 100%;
+                margin-top: 40px;
+                font-size: 24px;
+
+            }
+
+            .nav-item:hover {
+                background-color: #D9D9D9;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+
+
+            .nav-link {
+                color: #ffffff;
+                font-family: Inter;
+            }
+
+            .nav-link.active {
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+
+        }
+
+        /*電腦版footer*/
+        .footer {
+            width: 100%;
+            border-top: 7px solid #094847;
+            background-color: #094847;
+            height: 178px;
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            margin-top: 60px;
+
+
+
+        }
+
+        .w1 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 34px;
+            line-height: 48px;
+            letter-spacing: 0.4em;
+
+            text-align: left;
+
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w2 {
+
+            font-weight: Bold;
+
+            font-size: 32px;
+            letter-spacing: 0.075em;
+            font-style: italic;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w3 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+        .w4 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12.56%;
+            width: 23.54vw;
+
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            margin-right: 12.56%;
+            width: 34.656vw;
+        }
+
+        /*手機版footer*/
+
+        @media (max-width: 768px) {
+            .w1 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+                line-height: 24.2px;
+                text-align: left;
+
+            }
+
+            .w2 {
+                text-align: left;
+                font-weight: Bold;
+                font-size: 19px;
+                letter-spacing: 0.05em;
+                font-style: italic;
+                line-height: 26px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+
+            .w3 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                line-height: 20px;
+                text-align: left;
+            }
+
+            .w4 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                line-height: 20px;
+
+            }
+
+
+
+
+            .footer {
+                width: 100vw;
+                border-top: 12px solid #094847;
+                background-color: #094847;
+                height: 125px;
+                display: flex;
+
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+
+            .footer-left {
+                margin-left: 0%;
+                width: 100vw;
+                text-align: left;
+
+            }
+
+            .footer-right {
+                margin-left: 0%;
+                padding-left: 5%;
+                text-align: left;
+                width: 100vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <nav class="navbar" style="background-color: #094847; ">
+        <nav>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://108405042.github.io/solutions-news/homepage.html" style="color:#FFFFFF; font-size: 30px; font-weight: bold; ">解睏新聞</a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid" style="margin-right: 100px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="position: absolute; top: 10px; right: 10px;">
+                    <span class="navbar-toggler-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <button class="navbar-close-btn d-md-none" type="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: Inter" href="https://108405042.github.io/solutions-news/artlife.html">藝文 X 生活</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-family: Inter" aria-current="page">校園 X 體育</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://108405042.github.io/solutions-news/video.html">影音新聞</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://108405042.github.io/solutions-news/aboutus.html">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!-- title -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="news-title">中原力退衛冕軍　UVL預賽全勝求封王</h1>
+                    <div class="date">2021/12/22<br>【記者劉亭妤新竹報導】</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container main-container">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                        <p>110學年度大專校院排球聯賽公開男生組第一級預賽17日在國立清華大學體育館迎來最終戰，當天由中原大學與上季冠軍國立臺北教育大學交手，最後中原以直落三（25：22、25：21、25：20）擊退國北教，笑納預賽五連勝，以全勝之姿晉級複賽。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/5f9b8a945be605d80aa8297ea4fb6383-scaled.jpg">
+                        <figcaption>中原大學球員與國立臺北教育大學球員分別為企業甲級男女排球聯賽「桃園臺產隼鷹」、「conti」班底，因此兩隊對戰經驗豐富，也有高水準的表現。　圖／劉亭妤攝
+                        </figcaption>
+                        <p>甫開賽，雙方陷入膠著，比分一路緊咬至14：14，由中原拉出3分比分差打破僵局，雖然國北教舉球員周子揚與副攻手周冠宇聯手打出精彩後排攻擊，但中原馬上吊小球還以顏色，再加上兩度攔網得分，讓中原以24：21搶先聽牌，即使國北教在暫停後化解兩個局末點，仍然無法阻止中原搶下首局。
+                        </p>
+                        <p>次局國北教失誤不斷，而中原則穩定進帳得分，主攻手李尼希米、曾祥銘與副攻手林錦龍多點開花，以25：15收下第二局勝利。第三局國北教吹起反攻號角，率先拉出4分領先，此時中原教練喊出暫停，阻斷國北教攻勢，也使中原選手找回團隊節奏強攻逆轉比數。逆轉後中原氣勢更銳不可當，鎮密防守與強勁火力不斷拉大比分差距，最終中原以25：20喜迎預賽第五場勝利。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/f6d94a97bdba87e38aa6658350b091a4-scaled.jpg">
+                        <figcaption>得分的喜悅在中原大學球員臉上表露無遺，短暫團聚擊掌，彼此給予鼓勵。　圖／劉亭妤攝</figcaption>
+                        <p>中原教練陳克舟表示，兩隊對戰經驗豐富，因此更考驗球員的臨場發揮，而他很滿意球員今天的表現。李尼希米也認同教練想法，「第一局兩邊失誤都很少，分數一直咬著，等最後看誰比較穩定。」他也補充，第三局開局處於劣勢的原因正出於失誤較多。林錦龍分享在落後暫停時，教練特別針對防守觀念提醒球員，「攔網定位定好，其他交給後排球員防守。」
+                        </p>
+                        <p>中原今年注入不少新血，其中，從國立臺灣師範大學轉隊、近期又從快攻手轉型為主攻手的曾祥銘以及重回排球賽場的林錦龍備受矚目。曾祥銘表示，改打主攻手後必須將防守與接發球努力做到位，而在攻擊表現上，他則分享，練習時便不斷與舉球員溝通，直到配合流暢為止，才能在正式賽場上有效串聯。而今年才回歸球場的林錦龍坦言因為高中末期中斷排球生涯，在球技上仍有許多進步空間。「防守、攔網可以再更好。」擁有196公分的身材優勢，林錦龍希望能在前排攔網有更傑出的表現。
+                        </p>
+                        <p>今年賽季各隊競爭激烈，中原教練與選手都將目標放眼冠軍。上季最佳主攻手李尼希米期許自己表現能更穩定，才能幫助球隊取勝。而林錦龍除了期待隊伍能問鼎金盃外，也盼自己能初嘗個人獎項的滋味。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/22671be8d6f349987792e5ee5081c5f5-scaled.jpg">
+                        <figcaption>中原大學1號主攻手李尼希米雖然身高不突出，但彈跳力絕佳，使他攻擊與攔網表現亮眼，在國中、高中、大專排球聯賽都曾斬獲個人獎項。　圖／劉亭妤攝</figcaption>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/7ca9a8cf6b8608d2b4cc19b78469fbc2-scaled.jpg">
+                        <figcaption>中原大學10號副攻手林錦龍，有著身高196公分和左撇子的優勢，攔網與攻擊的表現備受期待。　圖／劉亭妤攝</figcaption>
+                    </div>
+                </div>
+
+                <!-- 其他文章 -->
+                <div class="col-md-4">
+                    <div class="related-article">
+                        <div class="related">其他文章</div>
+                        <a href="https://108405042.github.io/solutions-news/schoolsport2.html">
+                            <div class="related-box">
+                                <div class="related-num">1</div>
+                                <div class="related-title">東華交通罰款規定惹議<br>學生盼與校方對話</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/schoolsport3.html">
+                            <div class="related-box">
+                                <div class="related-num">2</div>
+                                <div class="related-title">臺師大體操隊現革命情感<br>重返全大運男團冠軍榮耀</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/schoolsport1.html">
+                            <div class="related-box">
+                                <div class="related-num">3</div>
+                                <div class="related-title">陽明公共睡覺空間啟用<br>盼提升學生課間休息品質</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/schoolsport5.html">
+                            <div class="related-box">
+                                <div class="related-num">4</div>
+                                <div class="related-title">本土陣容成功復仇<br>UBA健行逆轉政大</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="footer">
+        <div class="footer-left">
+            <span class="w1" style="color:white">
+                解睏新聞
+            </span>
+
+            <span class="w2" style="color:white">
+                Solutions News
+            </span>
+        </div>
+        <div class="footer-right">
+            <span class="w3" ; style="color:white">
+                協作者：王嘉瑜、郭以涵、郭宇璇、劉亭妤
+            </span>
+            <span class="w4" style="color:white">
+                指導老師：李法賢
+            </span>
+        </div>
+    </div>
+
+
+
+
+    <!--載入 Bootstrap JS 和 Popper.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-hl4Rl7o+zmUUojSmfWhFfRvF+dWg77ym8pX6SHrT9XHmT03cFw7wYVJ8jBFHN+i0"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjwZAwZua2+wVrO6U2R+mdfZRfy7WbcgmW9JgM1zSzJ4IT2B53U1La1fQrRs8Kz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        var overlay = document.querySelector('.overlay');
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        navbarToggler.addEventListener('click', function () {
+            navbarCollapse.classList.toggle('show');
+            overlay.classList.toggle('show');
+        });
+
+        overlay.addEventListener('click', function () {
+            navbarCollapse.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+        var navbarCloseBtn = document.querySelector('.navbar-close-btn');
+
+        navbarCloseBtn.addEventListener('click', function () {
+            navbarCollapse.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+
+    </script>
+
+</body>
+
+</html>
