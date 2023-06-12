@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- rwd css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <!-- rwd js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- rwd setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>走入城市發展史　條通走讀領民回顧在地光景</title>
+
+
+    <style>
+        /*電腦版文章頁*/
+
+        * {
+            box-sizing: border-box
+        }
+
+
+
+        body {
+            background-color: #DDE4E3
+        }
+
+        .news-title {
+            width: 95%;
+            /* max-width: max-content; */
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+        .hc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            width: 95%;
+            height: 30px;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 20px;
+            padding-top: 7px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+
+        p {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+            text-align: justify;
+        }
+
+        .news-img {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+        }
+
+        figcaption {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 15px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+
+
+        .related {
+            background-color: #094847;
+            width: 30%;
+            height: 40px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .related-box {
+            border-bottom: 1px solid #B3B6B9;
+            width: 100%;
+            height: 80px;
+            padding-top: 10px;
+            display: flex;
+        }
+
+        .related-num {
+            width: 40px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #094847;
+        }
+
+        .related-title {
+            padding-left: 3%;
+            padding-top: 3%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+
+        }
+
+        .main-content {
+            padding-top: 30px;
+            width: 90%;
+            margin-left: 5%;
+
+
+        }
+
+        .related-article {
+            margin-right: -15%;
+
+        }
+
+        /*手機版文章頁*/
+
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+
+            .main-content {
+                width: 100%;
+                margin-left: 0%;
+
+            }
+
+            .related-article {
+                width: 100%;
+                padding-left: 5%;
+                margin-top: 20px;
+            }
+
+            .related-box {
+                width: 90%;
+            }
+
+
+            .related-title {
+                font-size: 80%;
+            }
+
+            .news-title {
+                font-size: 34px;
+                width: 100%;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            .news-img {
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            figcaption {
+                font-size: 12px;
+                line-height: 14px;
+                padding-left: 5%;
+                padding-right: 5%;
+
+
+            }
+
+        }
+
+
+
+
+        /*電腦版header*/
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+        .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item:hover {
+            background-color: #D9D9D9;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            color: #4E4F51;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar-brand {
+            margin-left: 100px;
+        }
+
+        .navbar-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+
+        }
+
+        .navbar-toggler-icon span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin-bottom: 4px;
+            background-color: #fff;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        /*手機版header*/
+
+        @media (max-width: 768px) {
+
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                /* 修改為初始位置在畫面外 */
+                width: 100%;
+                height: 100%;
+                background-color: #094847;
+                transition: right 0.3s linear;
+                /* 添加過渡效果 */
+                z-index: 9999;
+            }
+
+            .navbar-collapse.show {
+                right: 0%;
+                /* 修改為滑入畫面內 */
+            }
+
+            .navbar-collapse.show .navbar-nav {
+                margin-top: 30px;
+            }
+
+
+            .navbar-toggler {
+                color: #ffffff;
+                margin-top: -15px;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar-brand {
+                margin-left: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .nav-item {
+                width: 100%;
+                margin-top: 40px;
+                font-size: 24px;
+
+            }
+
+            .nav-item:hover {
+                background-color: #D9D9D9;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+
+
+            .nav-link {
+                color: #ffffff;
+                font-family: Inter;
+            }
+
+            .nav-link.active {
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+
+        }
+
+        /*電腦版footer*/
+        .footer {
+            width: 100%;
+            border-top: 7px solid #094847;
+            background-color: #094847;
+            height: 178px;
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            margin-top: 60px;
+
+
+
+        }
+
+        .w1 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 34px;
+            line-height: 48px;
+            letter-spacing: 0.4em;
+
+            text-align: left;
+
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w2 {
+
+            font-weight: Bold;
+
+            font-size: 32px;
+            letter-spacing: 0.075em;
+            font-style: italic;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w3 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+        .w4 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12.56%;
+            width: 23.54vw;
+
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            margin-right: 12.56%;
+            width: 34.656vw;
+        }
+
+        /*手機版footer*/
+
+        @media (max-width: 768px) {
+            .w1 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+                line-height: 24.2px;
+                text-align: left;
+
+            }
+
+            .w2 {
+                text-align: left;
+                font-weight: Bold;
+                font-size: 19px;
+                letter-spacing: 0.05em;
+                font-style: italic;
+                line-height: 26px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+
+            .w3 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                line-height: 20px;
+                text-align: left;
+            }
+
+            .w4 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                line-height: 20px;
+
+            }
+
+
+
+
+            .footer {
+                width: 100vw;
+                border-top: 12px solid #094847;
+                background-color: #094847;
+                height: 125px;
+                display: flex;
+
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+
+            .footer-left {
+                margin-left: 0%;
+                width: 100vw;
+                text-align: left;
+
+            }
+
+            .footer-right {
+                margin-left: 0%;
+                padding-left: 5%;
+                text-align: left;
+                width: 100vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <nav class="navbar" style="background-color: #094847; ">
+        <nav>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://108405042.github.io/solutions-news/homepage.html" style="color:#FFFFFF; font-size: 30px; font-weight: bold; ">解睏新聞</a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid" style="margin-right: 100px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="position: absolute; top: 10px; right: 10px;">
+                    <span class="navbar-toggler-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <button class="navbar-close-btn d-md-none" type="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-family: Inter" aria-current="page">藝文 X 生活</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: Inter" href="https://108405042.github.io/solutions-news/schoolsport.html">校園 X 體育</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://108405042.github.io/solutions-news/video.html">影音新聞</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://108405042.github.io/solutions-news/aboutus.html">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!-- title -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="news-title">走入城市發展史　條通走讀領民回顧在地光景</h1>
+                    <div class="date">2021/12/01<br>【記者王嘉瑜綜合報導】</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container main-container">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                        <p>由島內散步與重大歷史懸疑案件調查辦公室攜手，邀請國立臺灣大學臺灣文學研究所博士候選人王品涵（筆名路那）擔任嚮導，「條通疑案調查事件簿」於11月28日在林森北路、新生北路與晴光商圈舉辦。活動帶領民眾來到農安街、錦新大樓與林森公園等地，層層剖析該區景物的巨大變遷，並對應曾發生在此地的懸疑案件。通過區域與犯罪間的微妙連結，匯聚成獨特的城市發展歷史。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/ec8f2922e666dd32c89465b707609e2b-scaled.jpg">
+                        <figcaption>國立臺灣大學臺灣文學研究所博士候選人王品涵手拿地圖，向民眾解釋清末民初時角頭與幫派在條通地區內的分布。　圖／王嘉瑜攝</figcaption>
+                        <p>條通地區過去歷經不同政權的統治，呈現了台灣歷史的多元面貌，包括日治時期的宮前町與日人墓地、戰後的美軍酒吧文化，以及現今大眾熟知的成人娛樂產業。而本次走讀路線中解說的懸案，皆是在複雜政治與產業文化的交會下孕育與誕生。路那提到，通過檢視過去的犯罪案件，不僅可以帶我們回到過去，理解事件當下的社會氛圍與禁忌，更重要的是引導我們反思所身處的時空。
+                        </p>
+                        <p>「界定犯罪的標準不會一成不變，它會因為不同政府、不同時代而改變。」他舉例，走讀路線行經的農安街，過去曾是私人派對的舉辦地點，人們從前只能在這裡藏匿不被社會允許的性慾與性向，尤其受到同志族群的歡迎。民國93年台北市警方在農安街查緝一場男同志性愛派對，路那說明，當時警方粗暴的蒐證過程、媒體污名化的報導，在在透露出大眾對同志文化、愛滋病的無知和曲解，是我們生活在性別平權意識普及的今日所難以想像的情景。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/598896b9425a6f5f6405d81d7129e435-scaled.jpg">
+                        <figcaption>走讀隊伍行經農安街時，國立臺灣大學臺灣文學研究所博士候選人王品涵通過警方蒐證留下的照片，介紹農安街事件始末。　圖／王嘉瑜攝</figcaption>
+                        <p>對懸疑案件有興趣的參與民眾王佩倪表示，他印象最深刻的走讀地點是被稱為「台北最大鬼屋」的錦新大樓，大樓過去因為建築設計缺失發生過2次火災，因此六樓的靈堂被多數人認為是悼念罹難者的區域，但路那發現照片中的牌位數量與死者人數不符，才發現那是為了安置孤身來到台灣的國民黨老兵而設立的共同祠堂。路那分享，我們會因為刻板印象去害怕某些東西，但如果嘗試去了解、去解釋，就會發現它其實蠻可愛的。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/dc9aa485a6530e74dd17a444f014ca46-scaled.jpg">
+                        <figcaption>圖右為號稱「台北最大鬼屋」的錦新大樓，黑色的玻璃帷幕是導致民國73年時代大飯店大火時，房客難以逃生的原因之一。　圖／王嘉瑜攝</figcaption>
+                        <p>走讀活動最後來到曾是日人墓地的林森公園，公園裡突兀的兩座鳥居是為祭祀第七任台灣總督明石原二郎及他的秘書官。路那解釋，因為政府在規劃都市綠地的更新時，未考慮到該地歷史發展，導致兩座鳥居現在的位置與方向都不在原先的位置。王佩倪説：「在聽這些歷史故事與懸疑案件的時候，我發現自己其實也不太了解我住的地方。」他補充，他不曾去思考幼時家旁的荷花池與農田，如何演變成為今日的高樓大廈。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/12/a2a03984057baedcd08c0dc43618d62e-1-scaled.jpg">
+                        <figcaption>兩座鳥居矗立在台北市林森公園內，圖右為祭祀第七任台灣總督明石原二郎。　圖／王嘉瑜攝</figcaption>
+                        <p>路那説道：「如果我們把城市當作自己的家，我們一定會希望它是設計好的、有意義的。」他也期許大眾可以通過走讀活動，將在學校獲得的扁平歷史知識，結合真實發生的社會事件，凝聚成立體的歷史意識。台大歷史學系學生莊鎮元認為，台灣人對於歷史的既定印象仍然停留在教科書的層面，而沒有融入生活，他強調，歷史不應該流於過去，而是應該和現代結合，這才是歷史教育的真正意義。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 其他文章 -->
+                <div class="col-md-4">
+                    <div class="related-article">
+                        <div class="related">其他文章</div>
+                        <a href="https://108405042.github.io/solutions-news/artlife1.html">
+                            <div class="related-box">
+                                <div class="related-num">1</div>
+                                <div class="related-title">動靜新舊相輝映<br>三人聯展共築世代對話橋梁</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife3.html">
+                            <div class="related-box">
+                                <div class="related-num">2</div>
+                                <div class="related-title">自信仰回望生活<br>〈夜巡預備備！〉演繹艋舺遶境籌備</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife7.html">
+                            <div class="related-box">
+                                <div class="related-num">3</div>
+                                <div class="related-title">農舍臨側臨路惹議<br>農民憂影響農作</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife5.html">
+                            <div class="related-box">
+                                <div class="related-num">4</div>
+                                <div class="related-title">國際影音平台委外<br>學者籲應先修法</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife6.html">
+                            <div class="related-box">
+                                <div class="related-num">5</div>
+                                <div class="related-title">融合在地歷史<br>中藥藝術節懷古倡漢藥生活化</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!--footer-->
+
+    <div class="footer">
+        <div class="footer-left">
+            <span class="w1" style="color:white">
+                解睏新聞
+            </span>
+
+            <span class="w2" style="color:white">
+                Solutions News
+            </span>
+        </div>
+        <div class="footer-right">
+            <span class="w3" ; style="color:white">
+                協作者：王嘉瑜、郭以涵、郭宇璇、劉亭妤
+            </span>
+            <span class="w4" style="color:white">
+                指導老師：李法賢
+            </span>
+        </div>
+    </div>
+
+
+
+
+    <!--載入 Bootstrap JS 和 Popper.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-hl4Rl7o+zmUUojSmfWhFfRvF+dWg77ym8pX6SHrT9XHmT03cFw7wYVJ8jBFHN+i0"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjwZAwZua2+wVrO6U2R+mdfZRfy7WbcgmW9JgM1zSzJ4IT2B53U1La1fQrRs8Kz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        var overlay = document.querySelector('.overlay');
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        navbarToggler.addEventListener('click', function () {
+            navbarCollapse.classList.toggle('show');
+            overlay.classList.toggle('show');
+        });
+
+        overlay.addEventListener('click', function () {
+            navbarCollapse.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+        var navbarCloseBtn = document.querySelector('.navbar-close-btn');
+
+        navbarCloseBtn.addEventListener('click', function () {
+            navbarCollapse.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+
+
+    </script>
+</body>
+
+</html>

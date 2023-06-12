@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- rwd css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <!-- rwd js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- rwd setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>融合在地歷史　中藥藝術節懷古倡漢藥生活化</title>
+
+    <style>
+        /*電腦版文章頁*/
+
+        * {
+            box-sizing: border-box
+        }
+
+
+
+        body {
+            background-color: #DDE4E3
+        }
+
+        .news-title {
+            width: 95%;
+            /* max-width: max-content; */
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+        .hc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            width: 95%;
+            height: 30px;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 20px;
+            padding-top: 7px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+
+        p {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+            text-align: justify;
+        }
+
+        .news-img {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 20px;
+        }
+
+        figcaption {
+            width: 100%;
+            padding-left: 12%;
+            padding-right: 5%;
+            padding-top: 15px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #4E4F51;
+        }
+
+
+
+        .related {
+            background-color: #094847;
+            width: 30%;
+            height: 40px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .related-box {
+            border-bottom: 1px solid #B3B6B9;
+            width: 100%;
+            height: 80px;
+            padding-top: 10px;
+            display: flex;
+        }
+
+        .related-num {
+            width: 40px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39px;
+            letter-spacing: 0.1em;
+            color: #094847;
+        }
+
+        .related-title {
+            padding-left: 3%;
+            padding-top: 3%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #707275;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+
+        }
+
+        .main-content {
+            padding-top: 30px;
+            width: 90%;
+            margin-left: 5%;
+
+
+        }
+
+        .related-article {
+            margin-right: -15%;
+
+        }
+
+        /*手機版文章頁*/
+
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+
+            .main-content {
+                width: 100%;
+                margin-left: 0%;
+
+            }
+
+            .related-article {
+                width: 100%;
+                padding-left: 5%;
+                margin-top: 20px;
+            }
+
+            .related-box {
+                width: 90%;
+            }
+
+
+            .related-title {
+                font-size: 80%;
+            }
+
+            .news-title {
+                font-size: 34px;
+                width: 100%;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            .news-img {
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+
+            }
+
+            figcaption {
+                font-size: 12px;
+                line-height: 14px;
+                padding-left: 5%;
+                padding-right: 5%;
+
+
+            }
+
+        }
+
+
+
+
+        /*電腦版header*/
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+        .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item:hover {
+            background-color: #D9D9D9;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            color: #4E4F51;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar-brand {
+            margin-left: 100px;
+        }
+
+        .navbar-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+
+        }
+
+        .navbar-toggler-icon span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin-bottom: 4px;
+            background-color: #fff;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        /*手機版header*/
+
+        @media (max-width: 768px) {
+
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                /* 修改為初始位置在畫面外 */
+                width: 100%;
+                height: 100%;
+                background-color: #094847;
+                transition: right 0.3s linear;
+                /* 添加過渡效果 */
+                z-index: 9999;
+            }
+
+            .navbar-collapse.show {
+                right: 0%;
+                /* 修改為滑入畫面內 */
+            }
+
+            .navbar-collapse.show .navbar-nav {
+                margin-top: 30px;
+            }
+
+
+            .navbar-toggler {
+                color: #ffffff;
+                margin-top: -15px;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar-brand {
+                margin-left: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .nav-item {
+                width: 100%;
+                margin-top: 40px;
+                font-size: 24px;
+
+            }
+
+            .nav-item:hover {
+                background-color: #D9D9D9;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+
+
+            .nav-link {
+                color: #ffffff;
+                font-family: Inter;
+            }
+
+            .nav-link.active {
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+
+        }
+
+        /*電腦版footer*/
+        .footer {
+            width: 100%;
+            border-top: 7px solid #094847;
+            background-color: #094847;
+            height: 178px;
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            margin-top: 60px;
+
+
+
+        }
+
+        .w1 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 34px;
+            line-height: 48px;
+            letter-spacing: 0.4em;
+
+            text-align: left;
+
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w2 {
+
+            font-weight: Bold;
+
+            font-size: 32px;
+            letter-spacing: 0.075em;
+            font-style: italic;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+
+        }
+
+        .w3 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+        .w4 {
+            font-family: "Inter";
+            font-weight: Bold;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+
+
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12.56%;
+            width: 23.54vw;
+
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            margin-right: 12.56%;
+            width: 34.656vw;
+        }
+
+        /*手機版footer*/
+
+        @media (max-width: 768px) {
+            .w1 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+                line-height: 24.2px;
+                text-align: left;
+
+            }
+
+            .w2 {
+                text-align: left;
+                font-weight: Bold;
+                font-size: 19px;
+                letter-spacing: 0.05em;
+                font-style: italic;
+                line-height: 26px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+
+            .w3 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                line-height: 20px;
+                text-align: left;
+            }
+
+            .w4 {
+                font-family: "Inter";
+                font-weight: Bold;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                line-height: 20px;
+
+            }
+
+
+
+
+            .footer {
+                width: 100vw;
+                border-top: 12px solid #094847;
+                background-color: #094847;
+                height: 125px;
+                display: flex;
+
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+
+            .footer-left {
+                margin-left: 0%;
+                width: 100vw;
+                text-align: left;
+
+            }
+
+            .footer-right {
+                margin-left: 0%;
+                padding-left: 5%;
+                text-align: left;
+                width: 100vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <nav class="navbar" style="background-color: #094847; ">
+        <nav>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://108405042.github.io/solutions-news/homepage.html" style="color:#FFFFFF; font-size: 30px; font-weight: bold; ">解睏新聞</a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid" style="margin-right: 100px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="position: absolute; top: 10px; right: 10px;">
+                    <span class="navbar-toggler-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <button class="navbar-close-btn d-md-none" type="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-family: Inter" aria-current="page">藝文 X 生活</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: Inter" href="https://108405042.github.io/solutions-news/schoolsport.html">校園 X 體育</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://108405042.github.io/solutions-news/video.html">影音新聞</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://108405042.github.io/solutions-news/aboutus.html">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!-- title -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="news-title">融合在地歷史　中藥藝術節懷古倡漢藥生活化</h1>
+                    <div class="date">2021/11/17<br>【記者王嘉瑜綜合報導】</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container main-container">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                        <p>「重回歷史現場！府城中藥店再次飄香。」第三屆中藥藝術生活節於13、14日，在台南市民權路、海安路與神農街口盛大舉辦。台南市政府文化局、經濟發展局、五條港商圈發展協會攜手合作，於舊時有「府城藥郊」之稱的五條港地區，推出藥草市集、歷史走讀、藥膳辦桌及香料手作體驗活動，探索中藥的歷史故事與創新面貌，拉近民眾生活與中藥文化的距離。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/11/8c009cd48939af3f02a4f7ef15551e26-scaled.jpg">
+                        <figcaption>臺南市政府文化局局長葉澤山蒞臨現場，分享幼時與爺爺一起到漢藥店買藥、吃山楂糖的記憶，呼籲民眾重回歷史現場，認識中藥的文化故事。　圖／王嘉瑜攝</figcaption>
+                        <p>今年中藥藝術生活節以「香料」為主題，邀請台南市及其他縣市漢藥老店、漢藥觀光工廠齊聚一堂，展現中藥在藥品、飲食、宗教與藝術中的多元樣貌。創立第一屆藝術生活節的博仁堂小老闆周建文在轉型家中漢藥店時，發現大家並未因藥房沒落而不吃中藥，只是不像以前重視冬至吃補等習慣，他補充道：「所以我才想發起這個活動，讓大家跟中藥重新談戀愛、回到以前的生活化。」
+                        </p>
+                        <p>亮點活動「穿街走巷尋藥香」—府城漢藥店走讀，由《臺南府城漢藥店誌》作者鄭佩雯擔任帶路人，帶領民眾親自走過五條港水道變成的巷弄街道，認識明朝末年時中藥材自安平港進口，聚集了上百家漢藥店的產業盛況，並介紹在地漢藥店、​開基祖藥王廟的歷史故事，感受中藥與在地居民的生活連結。鄭佩雯回顧，在紀錄傳統漢藥店的文化時普遍不受待見，會被認為是衛生局派來的「抓耙子」，他感嘆：「變遷的速度太快，隔天去、下個月去，某家漢藥店可能就關門了，會很後悔沒有把握時間去紀錄這些文化。」
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/11/6f574cfe06bf094e15a0779956663dc6-scaled.jpg">
+                        <figcaption>「穿街走巷尋藥香」走讀活動由《臺南府城漢藥店誌》作者鄭佩雯帶路，老師首先向民眾介紹「藥」字來源於使用草藥與音樂的治療方式。　圖／王嘉瑜攝</figcaption>
+                        <p>走讀活動也邀請「漁光島42號」現場開課，以「藥草裡的第二次抓周」為題，解說不同藥材的個性與故事，例如百里香代表不屈不撓的勇氣，並讓民眾通過近距離觀察、接觸與聞嗅藥材，調配自己喜愛的藥方，最後製成燃燒後可淨化空間的藥草鹽。​參與民眾歐家容在藥草抓周體驗中發現，中藥除了作為強健身體的藥品外，其實也可以提供我們安定精神的力量，突破生活中的困境。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/11/0d5da29205994866ad78fbd06cac6e31-scaled.jpg">
+                        <figcaption>漁光島42號以「藥草裡的第二次抓周」為題開課，讓參與民眾通過藥草手作體驗，看見中藥進入生活的可能。　圖／王嘉瑜</figcaption>
+                        <p>鄭佩雯認為，中藥與西藥最不一樣的地方在於，中藥把個人看作一個整體，混合不同藥材藥性治療病症，這樣綜合性的思維也可以成為現代醫療的借鑑。中國醫藥大學中醫學系學生古茹均表示：「雖然現在有不少現代化的藥廠，但未來執業時仍有可能遇到病人拿著中藥店的藥方來詢問，如果有機會與藥店交流、分析傳統藥方的組成，會對中醫藥往後的發展有幫助。」他也期待，活動未來可以增加衛教活動，引導民眾正確地認識與服用中藥，減少因不熟悉導致的偏見或誤用。
+                        </p>
+                        <img class="news-img"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2021/11/81d3a6e2efe755d80c40cc16573526e5-scaled.jpg">
+                        <figcaption>府城在地老藥店之一的泰順中藥行老闆郭益良，向民眾解釋店內藥材的來源與正確用途，感嘆傳統藥方中的部分藥材已經難以取得。　圖／王嘉瑜攝</figcaption>
+                        <p>去年，台中市中藥鉛中毒事件導致民眾對中藥人心惶惶。除此之外，台灣中藥材有九成仰賴國外進口，許多傳統藥方中的藥材無法取得，也是中藥使用意願逐漸降低的原因之一。周建文分享，活動最初僅有三間漢藥店參與，討論如何提升中藥的大眾接受度。今年的藝術生活節卻吸引更多傳統漢藥店、科技製藥廠商與藝術文化產業共同投入，喚醒大眾與中藥的親密記憶，也交織出一幅新舊交融的中藥意象，強化了中藥與民眾生活的緊密連結。
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 其他文章 -->
+                <div class="col-md-4">
+                    <div class="related-article">
+                        <div class="related">其他文章</div>
+                        <a href="https://108405042.github.io/solutions-news/artlife1.html">
+                            <div class="related-box">
+                                <div class="related-num">1</div>
+                                <div class="related-title">動靜新舊相輝映<br>三人聯展共築世代對話橋梁</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife3.html">
+                            <div class="related-box">
+                                <div class="related-num">2</div>
+                                <div class="related-title">自信仰回望生活<br>〈夜巡預備備！〉演繹艋舺遶境籌備</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife4.html">
+                            <div class="related-box">
+                                <div class="related-num">3</div>
+                                <div class="related-title">走入城市發展史<br>條通走讀領民回顧在地光景</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife5.html">
+                            <div class="related-box">
+                                <div class="related-num">4</div>
+                                <div class="related-title">國際影音平台委外<br>學者籲應先修法</div>
+                            </div>
+                        </a>
+
+                        <a href="https://108405042.github.io/solutions-news/artlife7.html">
+                            <div class="related-box">
+                                <div class="related-num">5</div>
+                                <div class="related-title">農舍臨側臨路惹議<br>農民憂影響農作</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+
+    <div class="footer">
+        <div class="footer-left">
+            <span class="w1" style="color:white">
+                解睏新聞
+            </span>
+
+            <span class="w2" style="color:white">
+                Solutions News
+            </span>
+        </div>
+        <div class="footer-right">
+            <span class="w3" ; style="color:white">
+                協作者：王嘉瑜、郭以涵、郭宇璇、劉亭妤
+            </span>
+            <span class="w4" style="color:white">
+                指導老師：李法賢
+            </span>
+        </div>
+
+
+
+
+
+        <!--載入 Bootstrap JS 和 Popper.js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-hl4Rl7o+zmUUojSmfWhFfRvF+dWg77ym8pX6SHrT9XHmT03cFw7wYVJ8jBFHN+i0"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pzjwZAwZua2+wVrO6U2R+mdfZRfy7WbcgmW9JgM1zSzJ4IT2B53U1La1fQrRs8Kz"
+            crossorigin="anonymous"></script>
+
+        <script>
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+            var overlay = document.querySelector('.overlay');
+            var navbarToggler = document.querySelector('.navbar-toggler');
+
+            navbarToggler.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+                overlay.classList.toggle('show');
+            });
+
+            overlay.addEventListener('click', function () {
+                navbarCollapse.classList.remove('show');
+                overlay.classList.remove('show');
+            });
+
+            var navbarCloseBtn = document.querySelector('.navbar-close-btn');
+
+            navbarCloseBtn.addEventListener('click', function () {
+                navbarCollapse.classList.remove('show');
+                overlay.classList.remove('show');
+            });
+
+
+        </script>
+
+</body>
+
+</html>
